@@ -215,4 +215,21 @@ class LoopsTest {
 		assertEquals(expectedOutput, outContent.toString());
 	}
 
+	@Test
+	void test_p() throws Exception {
+
+		String simulatedInput = "20\n";
+		ByteArrayInputStream inContent = new ByteArrayInputStream(simulatedInput.getBytes());
+		System.setIn(inContent);
+
+		ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+		System.setOut(new PrintStream(outContent));
+
+		Loops.loop_p();
+
+		String expectedOutput = "1\n2\n4\n5\n10\n20\n";
+
+		assertEquals(expectedOutput, outContent.toString());
+	}
+
 }

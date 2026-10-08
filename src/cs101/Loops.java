@@ -1,5 +1,9 @@
 package cs101;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+
 public class Loops {
 
 	// Please read the instructions for each problem below,
@@ -184,7 +188,17 @@ public class Loops {
 
 	}
 
-	public static void main(String[] args) {
+	public static void loop_p() throws Exception {
+
+		// Please write a program that uses BufferedReader to get input from the user.
+		// The program should then use a FOR loop (your choice)
+		// and print out the positive integers that divide that number evenly.
+		// For example, if the user enters "20", your program should print
+		// 1,2,3,4,5,10,20
+
+	}
+
+	public static void main(String[] args) throws Exception {
 
 		// Feel free to comment out certain lines to make it easier
 		// to debug your code here
@@ -201,6 +215,9 @@ public class Loops {
 		Loops.loop_k();
 		Loops.loop_l();
 		Loops.loop_m();
+		Loops.loop_n();
+		Loops.loop_o();
+		Loops.loop_p();
 
 	}
 
